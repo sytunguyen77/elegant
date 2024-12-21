@@ -95,6 +95,11 @@ header {
 /* Hero */
 .hero .hero-img img {
   height: 536px;
+  background: linear-gradient(
+    180deg,
+    rgba(52, 56, 57, 0) 83.21%,
+    rgba(52, 56, 57, 0.4) 100%
+  );
 }
 
 .hero .hero-section {
@@ -129,6 +134,34 @@ header {
 .hero .hero-text .hero-description .brand-name {
   color: var(--primary-color);
   font-weight: 600;
+}
+
+.hero .hero-img {
+  position: relative;
+}
+
+.hero .hero-img .arrow {
+  position: absolute;
+  top: 45%;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px #00000009;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.hero .hero-img .arrow-left {
+  left: 30px;
+}
+
+.hero .hero-img .arrow-right {
+  right: 30px;
 }
 
 /* Category*/
