@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #343839;
+  --secondary-color: #6c7275;
+  --blue-color: #377dff;
+  --white-color: ##ffffff;
+  --dark-color: #141718;
+  --green-color: #38cb89;
+  --background-color: #f3f5f7;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding-right: 3px;
+}
+
+.btn-xs {
+  font-size: 14px;
+  border-bottom: 1px solid var(--blue-color);
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--blue-color);
+}
+
+.btn-s {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: var(--dark-color);
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.btn i {
+  margin-left: 4px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
