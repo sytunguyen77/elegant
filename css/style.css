@@ -225,3 +225,328 @@ header {
   line-height: 44px;
   letter-spacing: -0.4px;
 }
+
+/* Featured */
+.features {
+  padding: 10px 0 0 0;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.features .feature-card {
+  max-width: 262px;
+  height: 220px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  position: relative;
+  left: 32px;
+}
+
+.features .feature-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.features .feature-card .feature-card__icon {
+  width: 48px;
+  height: 48px;
+}
+
+.features .feature-card__content .feature-card__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.features .feature-card__content .feature-card__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--secondary-color);
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .container {
+  max-width: 1440px;
+}
+
+.banner .banner-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  /* padding-right: 160px; */
+  padding-left: 72px;
+  width: 720px;
+}
+.banner .banner-content .banner-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: var(--blue-color);
+}
+
+.banner .banner-content .banner-title {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+}
+
+.banner .banner-content .banner-description {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--dark-color);
+}
+
+.banner .banner-content .btn {
+  width: fit-content;
+}
+
+/* Articles */
+.articles {
+  padding: 20px 0;
+}
+
+.articles .articles-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.articles .article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.articles .article-card .article-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.articles .article-card .article-card__content .btn {
+  width: fit-content;
+}
+
+.articles .articles-header .articles-title {
+  font-size: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  list-style: 44px;
+  letter-spacing: -0.4px;
+  color: #000000;
+}
+
+.articles .articles-body .article-card__title {
+  font-size: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #23262f;
+}
+
+/* Newletter */
+.newsletter {
+  padding: 40px 0 0 0;
+  position: relative;
+}
+
+.newsletter .container {
+  max-width: 1440px;
+}
+
+.newsletter .newsletter-image {
+  height: 360px;
+  overflow-y: hidden;
+}
+
+.newsletter .newsletter-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter .newsletter-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the content horizontally and vertically */
+  text-align: center;
+  z-index: 2000; /* Ensure content appears above the image */
+  margin-top: 32px;
+}
+
+.newsletter .newsletter-content .newsletter-content__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  list-style: 44px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.newsletter .newsletter-content .newsletter-content__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.newsletter .newsletter-content__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  border-bottom: 1px solid var(--secondary-color);
+  width: 488px;
+  height: 52px;
+  margin: 32px auto;
+}
+
+.newsletter .newsletter-content__form .newsletter-content__icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.newsletter .newsletter-content__input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.newsletter .newsletter-content__form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: var(--secondary-color);
+  background-color: transparent;
+}
+
+.newsletter .newsletter-c ontent__form a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  padding-top: 55px;
+  height: 240px;
+}
+
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 32px;
+}
+
+.footer .footer-logo img {
+  width: 105px;
+  height: 24px;
+}
+
+.footer .footer-top span {
+  color: var(--secondary-color);
+  height: 24px;
+}
+
+.footer .footer-tagline {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #e8ecef;
+}
+
+.footer .footer-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.footer .footer-nav li a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fefefe;
+}
+
+.footer .footer-bottom p,
+.footer-bottom a {
+  color: #fefefe;
+}
+
+.footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 49px;
+  border-top: 0.5px solid #6c7275;
+  padding-top: 16px;
+}
+
+.footer .footer-links {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-bottom .footer-copyright {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer .footer-bottom .footer-links li:nth-child(2),
+.footer .footer-bottom .footer-links li:nth-child(3) {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer .footer-bottom .footer-social {
+  display: flex;
+  gap: 24px;
+}
