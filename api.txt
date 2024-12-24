@@ -1,0 +1,42 @@
+api :
+- Endpoint : cấu trúc : htpp:// or https:// + domain or port (local) + hậu tố ( cách nhau bởi dấu /)
+- Trong endpoint : param , query
++ query : sau dấu ? 
++ param : các value sau dấu / được truyền động ( CÓ NHIỂU PARAM)
+
+restfull API : CRUD
+
+
+METHOD : GET , POST , PUT , PATCH , DELETE , CRUD , 
+GET : lấy dữ liệu R
+POST : tạo dữ liệu mới ( truyền dữ liệu qua body) C
+PUT , PATCH : cập nhật dữ liệu ( truyền dữ liệu qua body ) U
+
+cập nhật giá
+{
+      "id": 2,
+      "name": "Product 2", 
+      "category_id": 1, 
+      "price": 200 
+},
+
+PUT {
+    price : 500,
+     "id": 2,
+} -> {
+      price : 500,
+      name: null
+      category_id: null
+      id: 2
+}
+
+
+PATCH {
+     "price": 400
+}{
+      "id": 2,
+      "name": "Product 2",
+      "category_id": 1,
+      "price": 400
+},
+
