@@ -211,7 +211,7 @@ header {
   padding: 10px 0;
   /* height: 88px; */
 }
-.new-arrivals .container {
+.new-arrivals .new-arrivals-header {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -224,6 +224,132 @@ header {
   font-weight: 500;
   line-height: 44px;
   letter-spacing: -0.4px;
+}
+
+.new-arrivals .new-arrivals__product-list {
+  display: flex;
+  gap: 24px;
+  padding: 48px 0;
+}
+
+.new-arrivals .new-arrivals__product .product__main {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.new-arrivals .new-arrivals__product .product__main .product__overlay {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.new-arrivals .new-arrivals__product .product__main button {
+  /* display: none; */
+  width: 230px;
+  height: 46px;
+  color: #fefefe;
+  background-color: var(--dark-color);
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visiblity 0.3s ease, transform 0.3s ease;
+}
+
+.new-arrivals .new-arrivals__product .product__main:hover button {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.new-arrivals .new-arrivals__product .product__overlay {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+}
+
+.new-arrivals .new-arrivals__product .product__badge {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #141718;
+  background-color: #ffffff;
+  padding: 4px;
+  border-radius: 4px;
+  width: 67px;
+  height: 24px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.new-arrivals .new-arrivals__product .product__discount-badge {
+  background-color: var(--green-color);
+  width: 71px;
+  height: 24px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px;
+  color: #fefefe;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.new-arrivals .new-arrivals__product .product__image {
+  width: 242px;
+  height: 349px;
+  display: block;
+  cursor: pointer;
+}
+
+.new-arrivals .product__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.new-arrivals .new-arrivals__product .product__rating {
+  width: 88px;
+  /* height: 16px; */
+}
+
+.new-arrivals .new-arrivals__product .product-name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.new-arrivals .new-arrivals__product .product__price {
+  display: flex;
+  gap: 12px;
+}
+
+.new-arrivals
+  .new-arrivals__product
+  .product__price
+  .product__price-discounted {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.new-arrivals .new-arrivals__product .product__price .product__price-original {
+  text-decoration: line-through;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6c7275;
 }
 
 /* Featured */
