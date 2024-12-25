@@ -243,6 +243,36 @@ header {
   left: 16px;
 }
 
+.new-arrivals .new-arrivals__product .product__wishlist {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  color: #6c7275;
+  position: absolute;
+  top: 15px;
+  left: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 16px -8px #0f0f0f1f;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visiblity 0.3s ease, transform 0.3s ease;
+}
+
+.new-arrivals .new-arrivals__product .product__main:hover .product__wishlist {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-5px);
+}
+
+.new-arrivals .new-arrivals__product .product__wishlist img {
+  width: 18.33px;
+  height: 14.83px;
+}
+
 .new-arrivals .new-arrivals__product .product__main button {
   /* display: none; */
   width: 230px;
