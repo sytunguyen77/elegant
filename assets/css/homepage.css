@@ -354,20 +354,20 @@ header {
 
 ::-webkit-scrollbar {
   width: 10px;
-  height: 4px; /* Chiều cao scrollbar ngang */
+  height: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color); /* Màu của thanh kéo */
-  border-radius: 80px; /* Làm tròn góc của thanh kéo */
+  background: var(--primary-color);
+  border-radius: 80px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: darkgray; /* Màu khi hover */
+  background: darkgray;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f0f0f0; /* Màu nền của phần track */
+  background: #f0f0f0;
   border-radius: 5px;
 }
 
