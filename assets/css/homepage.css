@@ -237,12 +237,6 @@ header {
   /* overflow: hidden; */
 }
 
-.new-arrivals .new-arrivals__product .product__main .product__overlay {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-}
-
 .new-arrivals .new-arrivals__product .product__wishlist {
   width: 32px;
   height: 32px;

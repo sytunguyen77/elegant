@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/utilities.css" />
+    <link rel="stylesheet" href="./assets/css/detail.css" />
+    <title>Elegant</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <span
+        ><img src="./assets/images/Vector.svg" alt="" class="promo-icon"
+      /></span>
+      <span>30% off storewide — Limited time!</span>
+      <a href="" class="btn btn-xs"
+        >Shop Now <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </header>
+    <!-- end Header -->
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <a href="/" class="logo">
+          <img src="./assets/images/logo.svg" alt="Elegant" />
+        </a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="/"><img src="./assets/images/search.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="/"><img src="./assets/images/login.svg" alt="" /></a>
+          </li>
+          <li class="shopping-bag">
+            <a href="/"
+              ><img src="./assets/images/shopping bag.svg" alt=""
+            /></a>
+            <span class="item-count">0</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end Navbar -->
+
+    <!-- Product List -->
+    <section class="product">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="" class="breadcrumb__link">Home </a>
+          <img
+            src="./assets/images/greater-than.svg"
+            alt=""
+            class="breadcrumb__img"
+          />
+          <a href="" class="breadcrumb__link">Shop</a>
+          <img
+            src="./assets/images/greater-than.svg"
+            alt=""
+            class="breadcrumb__img"
+          />
+          <a href="" class="breadcrumb__link">Living Room</a>
+          <img
+            src="./assets/images/greater-than.svg"
+            alt=""
+            class="breadcrumb__img"
+          />
+          <span class="breadcrumb__current">Product</span>
+        </nav>
+
+        <div class="product-page__wrapper">
+          <!-- Product Gallery -->
+          <div class="product-gallery">
+            <div class="product__overlay">
+              <div class="product-gallery__badge product-gallery__badge--new">
+                NEW
+              </div>
+              <div
+                class="product-gallery__badge product-gallery__badge--discount"
+              >
+                -50%
+              </div>
+            </div>
+            <img
+              src="./assets/images/product-1.png"
+              alt="Tray Table"
+              class="product-gallery__image"
+            />
+            <div class="product-gallery__thumbnails">
+              <img
+                src="./assets/images/product-2.png"
+                alt=""
+                class="product-gallery__thumbnail"
+              />
+              <img
+                src="./assets/images/product-3.png"
+                alt=""
+                class="product-gallery__thumbnail"
+              />
+              <img
+                src="./assets/images/product-4.png"
+                alt=""
+                class="product-gallery__thumbnail"
+              />
+            </div>
+          </div>
+
+          <!-- Product Details -->
+          <div class="product-details">
+            <div class="product-details__rating">
+              <img
+                src="./assets/images/rating.svg"
+                alt=""
+                class="product-details__star"
+              />
+              <span class="product-details__reviews">11 Reviews</span>
+            </div>
+            <h1 class="product-details__title">Tray Table</h1>
+            <p class="product-details__description">
+              Buy one or buy a few and make every space where you sit more
+              convenient. Light and easy to move around with a removable tray
+              top, handy for serving snacks.
+            </p>
+            <div class="product-details__price">
+              <span class="product-details__price--current">$199.00</span>
+              <span class="product-details__price--original">$400.00</span>
+            </div>
+
+            <!-- Product Timer -->
+
+            <div class="product-details__timer">
+              <p class="product-details__timer-text">Offer expires in:</p>
+              <div class="product-details__timer-values">
+                <div class="product-details__timer-item">
+                  <span class="product-details__timer-value">02</span>
+                  <span class="product-details__timer-label">Days</span>
+                </div>
+                <div class="product-details__timer-item">
+                  <span class="product-details__timer-value">12</span>
+                  <span class="product-details__timer-label">Hours</span>
+                </div>
+                <div class="product-details__timer-item">
+                  <span class="product-details__timer-value">45</span>
+                  <span class="product-details__timer-label">Minutes</span>
+                </div>
+                <div class="product-details__timer-item">
+                  <span class="product-details__timer-value">05</span>
+                  <span class="product-details__timer-label">Seconds</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-details__measurements">
+              <h3 class="product-details__measurements-title">Measurements</h3>
+              <p class="product-details__measurements-value">17 1/2×20 5/8 "</p>
+            </div>
+
+            <!-- Product Color -->
+            <div class="product-details__colors">
+              <h3 class="product-details__colors-title">
+                Choose Color
+                <img src="./assets/images/greater-than.svg" alt="" />
+              </h3>
+              <h2 class="product-details__colors-sub">Black</h2>
+              <div class="product-details__colors-list">
+                <a href="#"
+                  ><img
+                    src="./assets/images/color-1.png"
+                    alt=""
+                    class="product-details__color product-details__color--black"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./assets/images/color-2.png"
+                    alt=""
+                    class="product-details__color product-details__color"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./assets/images/color-3.png"
+                    alt=""
+                    class="product-details__color product-details__color"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./assets/images/color-4.png"
+                    alt=""
+                    class="product-details__color product-details__color"
+                /></a>
+              </div>
+            </div>
+
+            <!-- Product actions -->
+            <div class="product-details__action">
+              <div class="product-details__quantity">
+                <button
+                  class="product-details__quantity-btn product-details__quantity-btn--decrease"
+                >
+                  -
+                </button>
+                <input
+                  type="text"
+                  class="number product-details__quantity-input"
+                  value="1"
+                  min="1"
+                />
+                <button
+                  class="product-details__quantity-btn product-details-details__quantity-btn--increase"
+                >
+                  +
+                </button>
+                <button class="product-details__wishlist">♡ Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Product List -->
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-image">
+          <img src="./assets/images/newsletter.png" alt="Newsletter" />
+        </div>
+        <div class="newsletter-content">
+          <h2 class="newsletter-content__title">Join Our Newsletter</h2>
+          <p class="newsletter-content__description">
+            Sign up for deals, new products and promotions
+          </p>
+          <form class="newsletter-content__form">
+            <div class="newsletter-content__input-group">
+              <span class="newsletter-content__icon">
+                <img src="./assets/images/letter.svg" alt="" />
+              </span>
+              <input
+                type="email"
+                class="newsletter-content__input"
+                placeholder="Email address"
+              />
+            </div>
+            <a href="">Signup</a>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Newsletter -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Top Section -->
+        <div class="footer-top flex">
+          <div class="footer-logo">
+            <img src="./assets/images/logo-2.svg" alt="Elegant Logo" />
+            <span>|</span>
+            <p class="footer-tagline">Gift & Decoration Store</p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Bottom Section -->
+        <div class="footer-bottom flex">
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-copyright">
+                Copyright © 2023 3legant. All rights reserved</a
+              >
+            </li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+          <ul class="footer-social">
+            <a href="#" class="social-icon">
+              <img src="./assets/images/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="#" class="social-icon">
+              <img src="./assets/images/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#" class="social-icon">
+              <img src="./assets/images/youtube.svg" alt="youtube" />
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+  <script src=""></script>
+
+  <script src="./assets/js/home.js"></script>
+</html>
