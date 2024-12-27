@@ -1,3 +1,20 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const loginButton = document.querySelector(".login-button");
+  const signUpForm = document.querySelector(".signup");
+  const closeButton = document.querySelector(".signup-close");
+
+  // Show sign-up form
+  loginButton.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    signUpForm.style.display = "flex";
+  });
+
+  // Close sign-up form
+  closeButton.addEventListener("click", () => {
+    signUpForm.style.display = "none";
+  });
+});
+
 const getData = async () => {
   const response = await fetch(
     `https://ecom-test-2209b-default-rtdb.firebaseio.com/category.json`

@@ -65,3 +65,164 @@
 .grid-4 {
   grid-template-columns: repeat(4, 1fr);
 }
+
+/* Sign-up  popup */
+
+.signup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.signup .signup-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1080px;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 0 auto;
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.signup .signup-wrapper .signup-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 900px;
+  width: 600px;
+}
+
+.signup .signup-wrapper .signup-image .logo-image {
+  position: absolute;
+  width: 105px;
+  height: 24px;
+  margin-top: 24px;
+}
+
+.signup .signup-wrapper .signup-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+}
+
+.signup .signup-wrapper .signup-close {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 50px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.signup .signup-wrapper .signup-form .signup-form__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.signup .signup-wrapper .signup-form .signup-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+  color: var(--dark-color);
+}
+
+.signup .signup-wrapper .signup-form .singup-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--secondary-color);
+}
+
+.signup .signup-wrapper .signup-form .singup-subtitle a {
+  color: var(--green-color);
+}
+
+.signup .signup-wrapper .signup-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.signup .signup-wrapper .signup-form form .signup-input {
+  border: none;
+  border-bottom: 1px solid #e8ecef;
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--secondary-color);
+  width: 100%;
+}
+
+.signup .signup-wrapper .signup-form form .signup-input:focus {
+  outline: none; /* Ensure there's no focus outline */
+}
+
+.signup .signup-wrapper .signup-form form .password-input {
+  position: relative;
+  color: var(--secondary-color);
+  width: 100%;
+}
+
+.signup .signup-wrapper .signup-form form .password-input i {
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.signup .signup-wrapper .signup-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.signup .signup-wrapper .signup-checkbox input {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.signup .signup-wrapper .signup-checkbox .signup__policy {
+  /* font-size: 16px; */
+  color: var(--secondary-color);
+}
+
+.signup .signup-wrapper .signup-checkbox .signup__policy a {
+  color: var(--dark-color);
+}
+
+.signup .signup-wrapper .signup-button {
+  padding: 10px 40px 10px 40px;
+  border-radius: 8px;
+  background-color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  cursor: pointer;
+}

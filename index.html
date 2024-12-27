@@ -41,13 +41,13 @@
         </ul>
         <ul>
           <li>
-            <a href="/"><img src="./assets/images/search.svg" alt="" /></a>
+            <a href="/" class="search-button"><img src="./assets/images/search.svg" alt="" /></a>
           </li>
           <li>
-            <a href="/"><img src="./assets/images/login.svg" alt="" /></a>
+            <a href="/" class="login-button"><img src="./assets/images/login.svg" alt="" /></a>
           </li>
           <li class="shopping-bag">
-            <a href="/"
+            <a href="/" class="shopping-button"
               ><img src="./assets/images/shopping bag.svg" alt=""
             /></a>
             <span class="item-count">0</span>
@@ -503,8 +503,63 @@
       </div>
     </footer>
     <!-- End Footer -->
-  </body>
-  <script src=""></script>
 
+    <!-- Sign-Up Pop Up -->
+    <div class="signup">
+      <div class="signup-wrapper">
+        <button class="signup-close" onclick="closeSignup()">×</button>
+        <!-- Left Section -->
+          <div class="signup-image">
+            <img src="./assets/images/sign-up.png" class="chair-image" />
+            <img src="./assets/images/logo.svg" class="logo-image" alt="" />
+          </div>
+          <!-- Right Section -->
+          <div class="signup-form">
+            <div class="signup-form__header">
+              <div class="signup-title">Sign up</div>
+              <p class="singup-subtitle">
+                Already have an account? <a href="#">Sign in</a>
+              </p>
+            </div>
+            <form>
+              <input
+                type="text"
+                placeholder="Your name"
+                class="signup-input"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Username"
+                class="signup-input"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email address"
+                class="signup-input"
+                required
+              />
+              <div class="password-input">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="signup-input"
+                  required
+                />
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <label for="" class="signup-checkbox">
+                <input type="checkbox" />
+                <p class="signup__policy">I agree with <a href="">Privacy Policy</a> and
+                  <a href="#">Terms of Use</a></p>
+              </label>
+              <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
   <script src="./assets/js/home.js"></script>
 </html>
